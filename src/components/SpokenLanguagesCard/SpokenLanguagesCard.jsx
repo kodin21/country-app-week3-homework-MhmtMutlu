@@ -1,12 +1,14 @@
 import React from 'react'
 import * as Style from './styles';
-import { card } from '../../motion/variants';
+import { languageCard } from '../../motion/variants';
 
 function SpokenLanguagesCard({ language, index }) {
   return (
     <Style.Card
       layout
-      variants={card}
+      variants={languageCard}
+      whileHover={{ scale: 1.1 }}
+      whileTap={{ scale: 0.9 }}
     >
       <Style.LanguageRank>
         {index + 1}

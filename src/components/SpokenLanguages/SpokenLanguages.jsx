@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import * as Style from './styles';
 import FindPopularLang from '../../utils/FindPopularLang';
 import SpokenLanguagesCard from '../SpokenLanguagesCard/SpokenLanguagesCard';
-import { countryCards } from '../../motion/variants';
+import { languageCards } from '../../motion/variants';
 
 function CountryList() {
   const { popularLanguages } = FindPopularLang();
@@ -16,7 +16,7 @@ function CountryList() {
   return (
     <Style.WrapperSection>
       <Style.Wrapper>
-        <Style.LanguageList variants={countryCards} initial="hidden" animate={isLoaded ? "show" : "hidden"}>
+        <Style.LanguageList variants={languageCards} initial="hidden" animate={isLoaded ? "show" : "hidden"}>
           {
             popularLanguages.map((language, index) => (
               <SpokenLanguagesCard
