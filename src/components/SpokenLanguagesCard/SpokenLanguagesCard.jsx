@@ -10,6 +10,7 @@ function SpokenLanguagesCard({ language, index }) {
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.9 }}
     >
+
       <Style.LanguageRank>
         {index + 1}
       </Style.LanguageRank>

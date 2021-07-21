@@ -10,6 +10,11 @@ export const Card = styled(motion.div)`
   display: flex;
   flex-direction: row;
   align-items: center;
+  background-color: #dee2e6;
+  border: none;
+  border-bottom: 10px solid #495057;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 `;
 
 export const LanguageRank = styled.p`

@@ -19,6 +19,16 @@ export const languageCards = {
   },
 };
 
+export const headerItems = {
+  hidden: {
+    opacity: 0
+  },
+  show: {
+    opacity: 1,
+    transition: { staggerChildren: 0.05, delayChildren: 0.05 },
+  },
+};
+
 export const countryCard = {
   hidden: {
     y: 50,
@@ -37,6 +47,17 @@ export const languageCard = {
   },
   show: {
     x: 0,
+    opacity: 1,
+  }
+};
+
+export const headerItem = {
+  hidden: {
+    y: -100,
+    opacity: 0,
+  },
+  show: {
+    y: 0,
     opacity: 1,
   }
 };

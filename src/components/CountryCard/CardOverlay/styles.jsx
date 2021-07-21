@@ -11,17 +11,19 @@ export const Backdrop = styled.div`
   border-radius: inherit;
   width: 100%;
   height: 100%;
-  background-color: rgba(220, 220, 220, 0.85);
+  background-color: rgba(200, 210, 210, 0.9);
   backdrop-filter: blur(2px);
 `;
 
 export const WrapperContainer = styled(motion.div)`
   position: relative;
   padding: 0 1rem;
+  color: #343a40;
 `;
 
 export const CountryName = styled.h3`
   text-align: center;
+  color: #212529;
 `;
 
 export const CountryDetails = styled.p`
