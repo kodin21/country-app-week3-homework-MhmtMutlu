@@ -20,7 +20,7 @@ function SpokenLanguagesCard({ language, index }) {
         </Style.LanguageName>
 
         <Style.CountryAmount>
-          is talking in <Style.Amount>{language[1]}</Style.Amount> countries.
+          is spoken by <Style.Amount>{language[1]}</Style.Amount> countries.
         </Style.CountryAmount>
       </Style.LanguageCardBody>
     </Style.Card>

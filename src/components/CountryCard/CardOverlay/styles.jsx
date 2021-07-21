@@ -17,6 +17,7 @@ export const Backdrop = styled.div`
 
 export const WrapperContainer = styled(motion.div)`
   position: relative;
+  padding: 0 1rem;
 `;
 
 export const CountryName = styled.h3`
@@ -25,6 +26,7 @@ export const CountryName = styled.h3`
 
 export const CountryDetails = styled.p`
   padding: 5px 0;
+  font-size: 14px;
 `;
 
 export const CountryData = styled.span`

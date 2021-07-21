@@ -26,6 +26,11 @@ function CardOverlay({ country }) {
         </Style.CountryDetails>
 
         <Style.CountryDetails>
+          Language: 
+          <Style.CountryData>{country.languages[0].name}</Style.CountryData>
+        </Style.CountryDetails>
+
+        <Style.CountryDetails>
           Population: 
           <Style.CountryData>{country.population}</Style.CountryData>
         </Style.CountryDetails>
