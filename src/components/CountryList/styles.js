@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 export const WrapperSection = styled.section`
   min-height: 100vh;
@@ -15,7 +16,7 @@ export const Wrapper = styled.div`
   align-items: center;
 `;
 
-export const CountryList = styled.div`
+export const CountryList = styled(motion.div)`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

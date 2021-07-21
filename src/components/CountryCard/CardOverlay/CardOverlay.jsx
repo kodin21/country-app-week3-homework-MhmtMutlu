@@ -1,10 +1,11 @@
 import React from 'react';
+import { cardOverlayContainer } from '../../../motion/variants';
 import * as Style from './styles';
 
 function CardOverlay({ country }) {
   return (
     <Style.Backdrop>
-      <Style.WrapperContainer>
+      <Style.WrapperContainer variants={cardOverlayContainer}>
         <Style.CountryName>
           {country.name}
         </Style.CountryName>

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 export const Backdrop = styled.div`
   display: flex;
@@ -14,7 +15,7 @@ export const Backdrop = styled.div`
   backdrop-filter: blur(2px);
 `;
 
-export const WrapperContainer = styled.div`
+export const WrapperContainer = styled(motion.div)`
   position: relative;
 `;
 

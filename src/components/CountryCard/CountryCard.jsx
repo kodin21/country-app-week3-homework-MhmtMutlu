@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { card } from '../../motion/variants';
 import CardOverlay from './CardOverlay/CardOverlay';
 import * as Style from './styles';
 
@@ -14,6 +15,8 @@ function CountryCard({ country }) {
 
   return (
     <Style.Card
+      layout
+      variants={card}
       onMouseOver={onMouseOverHandler}
       onMouseLeave={onMouseLeaveHandler}
     >
