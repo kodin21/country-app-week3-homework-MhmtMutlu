@@ -1,11 +1,10 @@
 import React from 'react';
-import CountriesApi from './api/CountriesApi';
+import CountryList from './components/CountryList/CountryList';
 
 function App() {
   return (
     <div>
-      Hello
-      <CountriesApi />
+      <CountryList />
     </div>
   );
 }
