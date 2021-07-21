@@ -5,14 +5,14 @@ import CountryCard from '../CountryCard/CountryCard';
 
 function CountryList() {
   const { countries } = CountriesApi();
-
+  
   return (
     <Style.WrapperSection>
       <Style.Wrapper>
         <Style.CountryList>
           {
             countries.map((country) => (
-              <CountryCard key={country.id} country={country} />
+              <CountryCard key={country.name} country={country} />
             ))
           }
         </Style.CountryList>
