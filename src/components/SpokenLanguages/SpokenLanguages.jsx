@@ -1,12 +1,16 @@
 import React from 'react';
-import CountriesApi from '../../api/CountriesApi';
+import FindPopularLang from '../../utils/FindPopularLang';
 
 function CountryList() {
-  const { countries } = CountriesApi();
+  const { popularLanguages } = FindPopularLang()
 
   return (
     <div>
-      hi
+      {
+        popularLanguages.map((lang) => (
+          <div>{lang[0]} - {lang[1]}</div>
+        ))
+      }
     </div>
   );
 }
