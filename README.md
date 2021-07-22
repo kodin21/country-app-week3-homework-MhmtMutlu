@@ -14,9 +14,9 @@
 
 # 🎞 Screenshot
 
-![Proje Resmi](public/screenshoot1.png)
-![Proje Resmi](public/screenshoot2.png)
-![Proje Resmi](public/screenshoot3.png)
+![Proje Resmi](public/screenshot1.png)
+![Proje Resmi](public/screenshot2.png)
+![Proje Resmi](public/screenshot3.png)
 
 ## Ülke Listesi / Istatistikleri Uygulaması
 
