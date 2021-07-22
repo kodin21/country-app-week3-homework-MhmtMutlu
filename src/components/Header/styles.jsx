@@ -17,7 +17,7 @@ export const HeaderSection = styled.header`
   }
 `;
 
-export const HeaderWrapper = styled(motion.div)`
+export const HeaderWrapper = styled.div`
   max-width: 1440px;
   margin: 0 auto;
   padding: 1rem 3rem;
@@ -27,7 +27,7 @@ export const HeaderWrapper = styled(motion.div)`
   align-items: center;
 `;
 
-export const HeaderTitle = styled(motion.h1)`
+export const HeaderTitle = styled.h1`
   color: #212529;
   font-size: 4rem;
   margin: 3.5rem;
