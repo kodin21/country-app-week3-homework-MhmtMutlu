@@ -29,6 +29,9 @@ export const SearchTitle = styled(motion.h3)`
   @media (max-width: 750px) {
     margin-bottom: 1rem;
   }
+  @media (max-width: 520px) {
+    text-align: center;
+  }
 `;
 
 export const SearchInput = styled(motion.input)`
@@ -49,6 +52,9 @@ export const SearchInput = styled(motion.input)`
   }
   &::placeholder {
     color: #212529;
+  }
+  @media (max-width: 380px) {
+    min-width: 15rem;
   }
 `;
 

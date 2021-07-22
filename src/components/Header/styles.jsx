@@ -31,6 +31,13 @@ export const HeaderTitle = styled(motion.h1)`
   color: #212529;
   font-size: 4rem;
   margin: 3.5rem;
+  @media (max-width: 750px) {
+    font-size: 3rem;
+  }
+  @media (max-width: 520px) {
+    text-align: center;
+    font-size: 2.3rem;
+  }
 `;
 
 export const ButtonWrapper = styled.div`
@@ -38,6 +45,11 @@ export const ButtonWrapper = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  @media (max-width: 750px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 `
 
 export const HeaderButton = styled(motion(Link))`
@@ -54,4 +66,13 @@ export const HeaderButton = styled(motion(Link))`
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   cursor: pointer;
+  @media (max-width: 750px) {
+    width: 15rem;
+    margin: 0;
+    margin-top: 1rem;
+    padding: 0.5rem 0;
+  }
+  @media (max-width: 520px) {
+    font-size: 1.5rem;
+  }
 `;
