@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import * as Style from './styles';
 import CountriesApi from '../../api/CountriesApi';
 import CountryCard from '../CountryCard/CountryCard';
-import { countryCards } from '../../motion/variants';
+import { countryCards, countryCard } from '../../motion/variants';
 
 function CountryList() {
   const { countries } = CountriesApi();
@@ -24,9 +24,16 @@ function CountryList() {
 
   return (
     <Style.WrapperSection>
-      <Style.SearchWrapper>
-        <Style.SearchTitle>Country List</Style.SearchTitle>
+      <Style.SearchWrapper variants={countryCards} initial="hidden" animate={isLoaded ? "show" : "hidden"}>
+        <Style.SearchTitle
+          layout
+          variants={countryCard}
+        >
+          Country List
+        </Style.SearchTitle>
         <Style.SearchInput 
+          layout
+          variants={countryCard}
           type="search" 
           onChange={searchCountry}
           placeholder="Search by country name..."

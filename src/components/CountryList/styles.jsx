@@ -10,7 +10,7 @@ export const WrapperSection = styled.section`
   }
 `;
 
-export const SearchWrapper = styled.div`
+export const SearchWrapper = styled(motion.div)`
   padding: 1rem 5rem;
   display: flex;
   flex-direction: row;
