@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 export const HeaderSection = styled.header`
   height: 500px;
@@ -39,7 +40,9 @@ export const ButtonWrapper = styled.div`
   align-items: center;
 `
 
-export const HeaderButton = styled(motion.button)`
+export const HeaderButton = styled(motion(Link))`
+  text-decoration: none;
+  text-align: center;
   width: 20rem;
   margin: 2rem;
   padding: 2rem 0;

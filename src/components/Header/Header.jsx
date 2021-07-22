@@ -18,6 +18,7 @@ function Header() {
             variants={headerItem}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
+            to="/"
           >
             Country List
           </Style.HeaderButton>
@@ -26,6 +27,7 @@ function Header() {
             variants={headerItem}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
+            to="/statistics"
           >
             Statistics
           </Style.HeaderButton>
