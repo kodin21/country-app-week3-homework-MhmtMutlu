@@ -5,7 +5,7 @@ export const countryCards = {
   },
   show: {
     opacity: 1,
-    transition: { staggerChildren: 0.05, delayChildren: 0.05 },
+    transition: { staggerChildren: 0.01, delayChildren: 0.01 },
   },
 };
 
