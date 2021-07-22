@@ -7,23 +7,40 @@ import { countryCards } from '../../motion/variants';
 function CountryList() {
   const { countries } = CountriesApi();
   const [isLoaded, setIsLoaded] = useState(false);
+  const [search, setSearch] = useState("");
   useEffect(() => {
     if (countries.length) {
       setIsLoaded(true)
     }
   }, [countries])
 
+  const searchCountry = (e) => {
+    setSearch(e.target.value)
+  };
+
+  const filteredCountries = countries.filter(country =>
+    country.name.toLowerCase().includes(search.toLowerCase())
+  );
+
   return (
     <Style.WrapperSection>
-      <Style.Wrapper>
+      <Style.SearchWrapper>
+        <Style.SearchTitle>Country List</Style.SearchTitle>
+        <Style.SearchInput 
+          type="search" 
+          onChange={searchCountry}
+          placeholder="Search by country name..."
+        />
+      </Style.SearchWrapper>
+      <Style.CartListWrapper>
         <Style.CountryList variants={countryCards} initial="hidden" animate={isLoaded ? "show" : "hidden"}>
           {
-            countries.map((country) => (
+            filteredCountries.map((country) => (
               <CountryCard key={country.name} country={country} />
             ))
           }
         </Style.CountryList>
-      </Style.Wrapper>
+      </Style.CartListWrapper>
     </Style.WrapperSection>
   );
 }
