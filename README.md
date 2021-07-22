@@ -1,4 +1,24 @@
-### Ülke Listesi / Istatistikleri Uygulaması
+# ⚛️ Country App with ReactJS
+
+<a href="">Go to Website</a>
+
+# 🧰 Toolbox
+
+<ul style="list-style-type:disc">
+   <li><a href="https://reactrouter.com/web/guides/quick-start">React Router</a></li>
+   <li><a href="https://styled-components.com/docs">Styled Components</a></li>
+   <li><a href="https://www.framer.com/docs/">Framer Motion</a></li>
+   <li><a href="https://www.npmjs.com/package/axios">Axios</a></li>
+   <li><a href="https://restcountries.eu/rest/v2/all">Rest Countries API</a></li>
+</ul>
+
+# 🎞 Screenshot
+
+![Proje Resmi](public/screenshoot1.png)
+![Proje Resmi](public/screenshoot2.png)
+![Proje Resmi](public/screenshoot3.png)
+
+## Ülke Listesi / Istatistikleri Uygulaması
 
 - Lütfen bu uygulamanızı React kullanarak yapın.
 - Bu uygulamada Create-React-App kullanarak bir başlangıç yapın.
