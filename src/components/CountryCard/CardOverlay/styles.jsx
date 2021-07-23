@@ -18,12 +18,12 @@ export const Backdrop = styled.div`
 export const WrapperContainer = styled(motion.div)`
   position: relative;
   padding: 0 1rem;
-  color: #343a40;
+  color: var(--secondary-color);
 `;
 
 export const CountryName = styled.h3`
   text-align: center;
-  color: #212529;
+  color: var(--primary-color);
 `;
 
 export const CountryDetails = styled.p`

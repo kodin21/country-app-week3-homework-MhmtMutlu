@@ -25,7 +25,7 @@ export const SearchWrapper = styled(motion.div)`
 
 export const SearchTitle = styled(motion.h3)`
   font-size: 2rem;
-  color: #212529;
+  color: var(--primary-color);
   @media (max-width: 750px) {
     margin-bottom: 1rem;
   }
@@ -39,19 +39,18 @@ export const SearchInput = styled(motion.input)`
   width: 40%;
   min-width: 20rem;
   font-size: 1.5rem;
-  background-color: #dee2e6;
-  color: #212529;
+  background-color: var(--card-color);
+  color: var(--primary-color);
   outline: none;
   border: none;
-  border-bottom: 5px solid #495057;
+  border-bottom: 5px solid var(--border-color);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   &:focus {
-    box-shadow: 0px 0px 3px #495057;
-    background-color: 
+    box-shadow: 0px 0px 3px var(--border-color);
   }
   &::placeholder {
-    color: #212529;
+    color: var(--primary-color);
   }
   @media (max-width: 380px) {
     min-width: 15rem;

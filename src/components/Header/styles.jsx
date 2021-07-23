@@ -9,7 +9,7 @@ export const HeaderSection = styled.header`
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  border-bottom: 10px solid #495057;
+  border-bottom: 10px solid var(--border-color);
   border-bottom-left-radius: 100px;
   border-bottom-right-radius: 100px;
   @media (max-width: 750px) {
@@ -28,7 +28,7 @@ export const HeaderWrapper = styled.div`
 `;
 
 export const HeaderTitle = styled.h1`
-  color: #212529;
+  color: var(--primary-color);
   font-size: 4rem;
   margin: 3.5rem;
   @media (max-width: 750px) {
@@ -59,10 +59,10 @@ export const HeaderButton = styled(motion(Link))`
   margin: 2rem;
   padding: 2rem 0;
   font-size: 2rem;
-  color: #212529;
-  background-color: #dee2e6;
+  color: var(--primary-color);
+  background-color: var(--card-color);
   border: none;
-  border-bottom: 8px solid #495057;
+  border-bottom: 8px solid var(--border-color);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   cursor: pointer;

@@ -19,6 +19,10 @@ export const Wrapper = styled(motion.div)`
 export const CardTitle = styled(motion.h3)`
   font-size: 3rem;
   padding: 2rem;
+  text-align: center;
+  @media (max-width: 750px) {
+    font-size: 2rem;
+  }
 `;
 
 export const LanguageList = styled(motion.div)`
