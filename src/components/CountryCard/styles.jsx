@@ -9,6 +9,9 @@ export const Card = styled(motion.div)`
   border-bottom: 1px solid inherit;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 export const CardImage = styled.img`
